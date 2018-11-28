@@ -1,2 +1,2 @@
-# ML_Tensorflow
+# ML
 Implementing basic ML algorithms using tensorflow
