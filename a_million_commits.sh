@@ -1,5 +1,5 @@
 # a million commits
-for Y in {2021..2021}
+for Y in {2022..2025}
 do
 	mkdir $Y
 	cd $Y
@@ -7,11 +7,11 @@ do
 	do
 		mkdir $M
 		cd $M
-		for D in {1..28}
+		for D in {1..6}
 		do
 			mkdir $D
 			cd $D
-            iter=$(shuf -i 1-12 -n 1)
+            iter=$(shuf -i 1-2 -n 1)
 			# the next line controls number of commits per day
             for ((i=0; i<$iter; i++))
 			do
