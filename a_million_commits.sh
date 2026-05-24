@@ -3,15 +3,15 @@ for Y in {2026..2026}
 do
 	mkdir $Y
 	cd $Y
-	for M in 1 2 4
+	for M in 2 5
 	do
 		mkdir $M
 		cd $M
-		for D in 1 5 6 12 19 22 29 
+		for D in 1 5 7 8 13 15 16 23 24
 		do
 			mkdir $D
 			cd $D
-            iter=$(shuf -i 1-3 -n 1)
+            iter=$(shuf -i 1-4 -n 1)
 			# the next line controls number of commits per day
             for ((i=0; i<$iter; i++))
 			do
